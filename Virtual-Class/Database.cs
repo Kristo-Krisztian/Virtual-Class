@@ -28,6 +28,12 @@ namespace Virtual_Class
             command = new SqlCommand();
             command.Connection = connection;
         }
+
+        ~Database()
+        {
+
+        }
+
         public string ConnectionString
         {
             get
@@ -38,10 +44,6 @@ namespace Virtual_Class
             {
                 ConnectionString = value;
             }
-        }
-
-        ~Database()
-        {
         }
 
         public void OpenConnection()
@@ -60,6 +62,7 @@ namespace Virtual_Class
         {
             connection.Close();
         }
+
         public void InsertData(string where,string data)
         {
             try
