@@ -20,12 +20,14 @@ namespace Virtual_Class
         {
             // Add your connection here for now
             Database db=new Database(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Tamas\Documents\GitHub\Virtual-Class\Virtual-Class\ServerDB.mdf;Integrated Security=True");
-           // some testing...
+          
+            // some testing...
             db.OpenConnection();
             db.InsertData("UserName", "LOL");
             db.InsertData("UserName", "LEL");
             db.ReadData("UserName");
             db.CloseConnection();
+  
         }
     }
 }

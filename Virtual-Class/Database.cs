@@ -13,12 +13,31 @@ namespace Virtual_Class
         SqlConnection connection;
         SqlCommand command;
         SqlDataReader reader;
-        
+        string _connectionString;
+
         public Database(string connectionString)
         {
             connection = new SqlConnection(connectionString);
             command = new SqlCommand();
             command.Connection = connection;
+        }
+
+        public Database()
+        {
+            connection.ConnectionString = ConnectionString;
+            command = new SqlCommand();
+            command.Connection = connection;
+        }
+        public string ConnectionString
+        {
+            get
+            {
+                return ConnectionString;
+            }
+            set
+            {
+                ConnectionString = value;
+            }
         }
 
         ~Database()
