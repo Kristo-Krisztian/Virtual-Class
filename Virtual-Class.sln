@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual-Class", "Virtual-Class\Virtual-Class.csproj", "{4FCB99BB-B429-413C-A7B4-DF930B5F434C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual-Class-Server", "Virtual-Class\Virtual-Class-Server.csproj", "{4FCB99BB-B429-413C-A7B4-DF930B5F434C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual-Class-Client", "Virtual-Class-Client\Virtual-Class-Client.csproj", "{670EDD7A-DD39-420B-BBE9-6E478CD4EEBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4FCB99BB-B429-413C-A7B4-DF930B5F434C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FCB99BB-B429-413C-A7B4-DF930B5F434C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FCB99BB-B429-413C-A7B4-DF930B5F434C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670EDD7A-DD39-420B-BBE9-6E478CD4EEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670EDD7A-DD39-420B-BBE9-6E478CD4EEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670EDD7A-DD39-420B-BBE9-6E478CD4EEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670EDD7A-DD39-420B-BBE9-6E478CD4EEBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
