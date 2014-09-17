@@ -38,6 +38,25 @@ namespace Virtual_Class
         {
             _txtBox.Add(txtBox);
         }
-   
+        
+        public Button GetButtonByIndex(int index)
+        {
+            return _button[index];
+        }
+
+        public Label GetLabelByIndex(int index)
+        {
+            return _label[index];
+        }
+
+        public TextBox GetTextBoxByIndex(int index)
+        {
+            return _txtBox[index];
+        }
+
+        public PictureBox GetPictureBoxByIndex(int index)
+        {
+            return _pBox[index];
+        }
     }
 }
