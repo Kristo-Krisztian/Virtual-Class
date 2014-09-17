@@ -8,12 +8,15 @@ using System.Windows.Forms;
 
 namespace Virtual_Class
 {
+    /// <summary>
+    /// Provide functions that will make working with the database much easier
+    /// </summary>
     class Database
     {
         private SqlConnection connection;
         private SqlCommand command;
         private SqlDataReader reader;
-        private string _connectionString;
+        private string connectionString;
 
         public Database(string connectionString)
         {
@@ -38,11 +41,11 @@ namespace Virtual_Class
         {
             get
             {
-                return _connectionString;
+                return connectionString;
             }
             set
             {
-                _connectionString = value;
+                connectionString = value;
             }
         }
 
@@ -60,7 +63,14 @@ namespace Virtual_Class
 
         public void CloseConnection()
         {
-            connection.Close();
+            try
+            {
+                connection.Close();
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show("An error ocurred while closing the connetion,error message: " + ex.ToString());
+            }
         }
 
         public void InsertData(string where,string data)
