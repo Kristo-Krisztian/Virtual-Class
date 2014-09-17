@@ -9,6 +9,6 @@ namespace Virtual_Class
     // TODO: implement it after adding the forms
     class FormManager
     {
-
+        public static WorkForm wForm = new WorkForm();
     }
 }
