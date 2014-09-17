@@ -58,7 +58,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlManager.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="FormManager.cs" />
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>

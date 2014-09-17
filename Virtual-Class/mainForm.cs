@@ -27,7 +27,6 @@ namespace Virtual_Class
             db.InsertData("UserName", "LEL");
             db.ReadData("UserName");
             db.CloseConnection();
-  
         }
     }
 }

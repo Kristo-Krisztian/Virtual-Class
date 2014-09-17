@@ -10,10 +10,10 @@ namespace Virtual_Class
 {
     class Database
     {
-        SqlConnection connection;
-        SqlCommand command;
-        SqlDataReader reader;
-        string _connectionString;
+        private SqlConnection connection;
+        private SqlCommand command;
+        private SqlDataReader reader;
+        private string _connectionString;
 
         public Database(string connectionString)
         {
@@ -38,11 +38,11 @@ namespace Virtual_Class
         {
             get
             {
-                return ConnectionString;
+                return _connectionString;
             }
             set
             {
-                ConnectionString = value;
+                _connectionString = value;
             }
         }
 
