@@ -22,11 +22,11 @@ namespace Virtual_Class
             Database db=new Database(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Tamas\Documents\GitHub\Virtual-Class\Virtual-Class\ServerDB.mdf;Integrated Security=True");
           
             // some testing...
-            db.OpenConnection();
-            db.InsertData("UserName", "LOL");
-            db.InsertData("UserName", "LEL");
-            db.ReadData("UserName");
-            db.CloseConnection();
+           // db.OpenConnection();
+          //  db.InsertData("UserName", "LOL");
+          //  db.InsertData("UserName", "LEL");
+           // db.ReadData("UserName");
+           // db.CloseConnection();
             FormManager.wForm.Show();
         }
     }
